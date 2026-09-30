@@ -1,0 +1,11 @@
+# Netlify automatically installs its current OpenNext adapter for Next.js.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Set DATABASE_URL in the Netlify dashboard, available to builds and functions.
+# Never put database credentials in this file or in public NEXT_PUBLIC_* variables.
+# Initialize a new database once using the instructions in PUBLISHING.md.
